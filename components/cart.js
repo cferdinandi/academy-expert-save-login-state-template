@@ -17,7 +17,7 @@ function addToCart (id) {
  * Remove a photo from the cart
  * @param  {String} id The photo ID
  */
-function removeFromCart () {
+function removeFromCart (id) {
 	delete cart[id];
 	localStorage.setItem('cart', JSON.stringify(cart));
 }
